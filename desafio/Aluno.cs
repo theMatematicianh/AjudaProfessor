@@ -13,7 +13,6 @@ namespace desafio
         public double Nota1 { get; set; }
         public double  Nota2 { get; set; }
         public string Aprovado { get; set; }
-
         public Aluno(string nomeAluno, int matricula, double nota1, double nota2)
         {
             NomeAluno = nomeAluno;

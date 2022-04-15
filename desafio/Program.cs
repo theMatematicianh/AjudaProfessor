@@ -13,26 +13,24 @@ namespace desafio
             Console.WriteLine("Primeira Nota: ");
             double nota1 = double.Parse(Console.ReadLine());
             
-            if(nota1<0.0 || nota1 > 10.0)
-            {
+          
                 while (nota1 < 0.0 || nota1 > 10.0)
                 {
                     Console.WriteLine("A nota é invalida, digite outra nota:");
                     nota1 = double.Parse(Console.ReadLine());
                 }
-            }
+            
             
             Console.WriteLine("Segunda nota:");
             double nota2 = double.Parse(Console.ReadLine());
 
-            if (nota2 < 0.0 || nota2 > 10.0)
-            {
+           
                 while (nota2 < 0.0 || nota2 > 10.0)
                 {
                     Console.WriteLine("A nota é invalida, digite outra nota:");
                     nota2 = double.Parse(Console.ReadLine());
                 }
-            }
+            
 
             Console.WriteLine("");
 

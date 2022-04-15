@@ -11,14 +11,9 @@ namespace desafio
         public string NomeMateria { get; set; }
         public string Periodo { get; set; }
         public  int Grau { get; set; }
-    
-
         public Materias()
         {
-
         }
-
-
         public Materias(string nomeMateria, string periodo, int grau)
         {
             NomeMateria = nomeMateria;

@@ -12,7 +12,7 @@ namespace desafio
         public double Salario { get; set; }
         public List<Materias> Materiasl { get; set; } = new List<Materias>();
         public double Aumento { get; set; }
-
+        
         public Professor()
         {
         }
@@ -30,25 +30,19 @@ namespace desafio
         {
             Materiasl.Add(materia);
         }
-    
         public double AumentoSalario(double aumento)
         {
             return Salario + aumento;
         }
-      
-     
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-
             sb.AppendLine("Nome: " + Nome+" , Salario: R$"+Salario.ToString("F2"));
-
             sb.AppendLine("Materias: ");
             foreach (Materias materia in Materiasl)
             {
                 sb.AppendLine(materia.ToString());
-            }
-           
+            } 
             return sb.ToString();
         }
     }
